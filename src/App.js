@@ -74,7 +74,7 @@ const App = () => {
                             <hr />
                             ScriptMetaWebsite, created by Icecapade, is a website to let you browse through Script meta-documentation.
                             <br />
-                            You can find ScriptMetaWebsite on Github.
+                            You can find <a href="https://github.com/Hydroxycobalamin/ScriptMetaWebsite">ScriptMetaWebsite on GitHub</a>.
                             <br />
                             Theme: Standard Dark, created by Alex 'mcmonkey' Goodwin.
                             <br />
