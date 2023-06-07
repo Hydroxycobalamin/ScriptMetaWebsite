@@ -12,7 +12,7 @@ const ScriptList = () => {
 
     const fetchScripts = async () => {
         try {
-            const response = await fetch("http://localhost:3050/api/script");
+            const response = await fetch("/api/script");
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }

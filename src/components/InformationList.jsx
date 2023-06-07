@@ -12,7 +12,7 @@ const InformationList = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await fetch("http://localhost:3050/api/information");
+            const response = await fetch("/api/information");
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }
