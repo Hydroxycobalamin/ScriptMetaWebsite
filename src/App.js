@@ -80,6 +80,8 @@ const App = () => {
                             <br />
                             <a href="https://bootswatch.com/darkly/">Darkly Bootstrap Theme</a> by Thomas Park, which was released under the{" "}
                             <a href="https://github.com/thomaspark/bootswatch/blob/7fcf822114e71cfb3b89e98afb58055d21f5e240/LICENSE">MIT License</a>
+                            <br />
+                            This site is powered by ReactJS and inspired by <a href="https://github.com/DenizenScript/DenizenMetaWebsite">DenizenMetaWebsite</a>.
                         </center>
                     </footer>
                 </div>

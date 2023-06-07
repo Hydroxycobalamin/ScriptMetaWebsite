@@ -58,12 +58,10 @@ const AllData = () => {
         <div className="d-flex flex-column">
             <div className="jumbotron">
                 <center>
-                    <h1>Script Documentation Website</h1>
-                    <h4>
-                        A MetaWebsite for Denizen Scripts. It does not teach you how to use Denizen. Are you looking for Denizen instead? Click{" "}
-                        <a href="https://denizenscript.com/">here</a>
-                    </h4>
-                    <h3>This site is powered by ReactJS and inspired by DenizenMetaWebsite.</h3>
+                    <h3>Script Documentation Website</h3>
+                    <p>
+                        A MetaWebsite for Denizen Scripts. Looking for <a href="https://denizenscript.com/">Denizen</a> instead?
+                    </p>
                 </center>
             </div>
             <center>

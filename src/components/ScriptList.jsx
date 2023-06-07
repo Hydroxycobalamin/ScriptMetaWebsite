@@ -46,8 +46,8 @@ const ScriptList = () => {
                     <p>Script Explanations explain different scripts and features.</p>
                     <h4>New to Denizen?</h4>
                     <p>
-                        Check out the <a href="https://guide.denizenscript.com/">Denizen Beginner's Guide</a> or ask on{" "}
-                        <a href="https://discord.gg/Q6pZGSR">Discord</a> for help.
+                        Check out the <a href="https://guide.denizenscript.com/">Denizen Beginner's Guide</a> and join the Denizen{" "}
+                        <a href="https://discord.gg/Q6pZGSR">Discord</a>.
                     </p>
                 </center>
             </div>
