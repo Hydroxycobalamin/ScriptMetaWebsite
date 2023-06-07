@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* General Page */
+.lock_top {
+  background-color: #222;
+}
+hr {
+  border-color: #AAAAAA;
+}
+/* Standard Dark: created by Alex 'mcmonkey' Goodwin */
+/* Denizen Script Colors */
+.script_comment_header{color:#FF0000;}
+.script_comment_normal{color:#007700;}
+.script_comment_code{color:#DD5500;}
+.script_comment_todo{color:#FFFF00;font-weight:bold;}
+.script_key{color:#1155FF;}
+.script_key_inline{color:#1155FF;font-style:italic;}
+.script_command{color:#DD99FF;font-style:italic;}
+.script_quote_double{color:#77BBF5;}
+.script_quote_single{color:#88DDFF;}
+.script_tag{color:#AAAAAA;}
+.script_tag_dot{color:#EEEEFF;}
+.script_tag_param{color:#7777FF;}
+.script_tag_param_bracket{color:#7777FF;}
+.script_colon{color:#66CCFF;font-weight:bold;}
+.script_bad_space{color:#FFFFFF;background-color:#440000;}
+.script_normal{color:#FFFFFF;}
+.script_def_name{color:#33CCFF;font-style:italic;}
+/* Denizen Command Syntax Colors */
+.syntax_command{color:#DD99FF;}
+.syntax_required{color:#7777FF;font-weight:bold;}
+.syntax_optional{color:#77BBF5;}
+.syntax_default{color:#55DDBB;font-style:italic;}
+.syntax_fillable{color:#AAAAAA;}
+.syntax_list{color:#EEEEFF;}
+.syntax_colon{color:#66CCFF;font-weight:bold;}
+
+.td-doc-key {
+    width: 150px;
+}
+
+.table {
+    max-width: 1500px;
+    border: 2px #606060 solid;
+}
+
+.status {
+    min-height: 650px;
+}
+
+.jumbotron {
+    padding: 2rem;
+    background-color: #303030;
 }
