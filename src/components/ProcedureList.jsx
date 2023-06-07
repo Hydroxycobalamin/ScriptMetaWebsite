@@ -12,7 +12,7 @@ const ProcedureList = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/procedure");
+            const response = await fetch("http://localhost:3050/api/procedure");
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }

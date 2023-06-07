@@ -12,7 +12,7 @@ const TaskList = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/task");
+            const response = await fetch("http://localhost:3050/api/task");
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }

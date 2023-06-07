@@ -12,7 +12,7 @@ const EventList = () => {
 
     const fetchEvents = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/event");
+            const response = await fetch("http://localhost:3050/api/event");
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }
