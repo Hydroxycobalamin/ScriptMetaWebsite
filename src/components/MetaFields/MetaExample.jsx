@@ -2,6 +2,9 @@ import React from "react";
 import { Highlighter } from "../ScriptHighlighting/ScriptHighlighter.jsx";
 
 export const MetaExample = ({ example }) => {
+    const checkForWhiteSpace = (line) => {
+        return line.startsWith(" ");
+    };
     if (!example) {
         return null;
     }
@@ -12,8 +15,10 @@ export const MetaExample = ({ example }) => {
                 {example && example.length > 0 ? (
                     example.map((item, index) => (
                         <React.Fragment key={index}>
-                            <Highlighter text={item} />
-                            <br></br>
+                            <span className={checkForWhiteSpace(item) ? "whiteSpace" : ""}>
+                                <Highlighter text={item} />
+                                <br />
+                            </span>
                         </React.Fragment>
                     ))
                 ) : (

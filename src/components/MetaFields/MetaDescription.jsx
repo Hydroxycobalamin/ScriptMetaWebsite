@@ -1,8 +1,8 @@
 import React from "react";
 
 export const MetaDescription = ({ description }) => {
-    const checkForWhiteSpace = (text) => {
-        return text.startsWith(" ");
+    const checkForWhiteSpace = (line) => {
+        return line.startsWith(" ");
     }
     return (
         <tr className="table-default">
