@@ -2,6 +2,9 @@ import React from "react";
 import { Highlighter } from "../ScriptHighlighting/ScriptHighlighter.jsx";
 
 export const MetaExample = ({ example }) => {
+    if (!example) {
+        return null;
+    }
     return (
         <tr className="table-default">
             <td className="td-doc-key">Example:</td>

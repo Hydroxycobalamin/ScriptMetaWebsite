@@ -10,6 +10,7 @@ import MetaSource from "../MetaFields/MetaSource.jsx";
 import MetaReturns from "../MetaFields/MetaReturns.jsx";
 import MetaScript from "../MetaFields/MetaScript";
 import MetaGroup from "../MetaFields/MetaGroup";
+import MetaExample from "../MetaFields/MetaExample";
 
 const MetaProcedure = ({ data }) => {
     const searchQuery = useContext(SearchContext);
@@ -25,6 +26,7 @@ const MetaProcedure = ({ data }) => {
                             <MetaName name={entry.attribute} type="procedures" />
                             <MetaReturns returns={entry.returns} />
                             <MetaDescription description={entry.description} />
+                            <MetaExample example={entry.example} />
                             <MetaGroup group={entry.group} />
                             <MetaScript script={entry.script} />
                             <MetaWarning warning={entry.warning} />
