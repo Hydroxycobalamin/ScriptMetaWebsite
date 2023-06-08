@@ -1,5 +1,4 @@
 export const SanitizeName = (name) => {
-    console.log(name);
     var sanitizedName = name.replace("<", "")
                             .replace(">", "")
                             .replace(".proc[", ".proc.")

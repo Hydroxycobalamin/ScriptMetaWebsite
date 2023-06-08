@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Script from "./MetaObjects/Script";
 
+import { ScrollHelper } from "./Helpers/ScrollHelper";
+
 const ScriptList = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -9,6 +11,12 @@ const ScriptList = () => {
     useEffect(() => {
         fetchScripts();
     }, []);
+
+    useEffect(() => {
+        if (!isLoading) {
+            ScrollHelper();
+        }
+    }, [isLoading]);
 
     const fetchScripts = async () => {
         try {

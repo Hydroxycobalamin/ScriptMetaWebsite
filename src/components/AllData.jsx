@@ -7,6 +7,7 @@ import Event from "./MetaObjects/Event";
 
 import { SearchContext } from "../App";
 import { filterDataBySearchQuery } from "./SearchHelper/Search";
+import { ScrollHelper } from "./Helpers/ScrollHelper";
 
 const AllData = () => {
     const [data, setData] = useState([]);
@@ -17,6 +18,12 @@ const AllData = () => {
     useEffect(() => {
         fetchAllData();
     }, []);
+
+    useEffect(() => {
+        if (!isLoading) {
+            ScrollHelper();
+        }
+    }, [isLoading]);
 
     const fetchAllData = async () => {
         try {

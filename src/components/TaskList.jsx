@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Task from "./MetaObjects/Task";
 
+import { ScrollHelper } from "./Helpers/ScrollHelper";
+
 const TaskList = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -9,6 +11,12 @@ const TaskList = () => {
     useEffect(() => {
         fetchTasks();
     }, []);
+
+    useEffect(() => {
+        if (!isLoading) {
+            ScrollHelper();
+        }
+    }, [isLoading]);
 
     const fetchTasks = async () => {
         try {

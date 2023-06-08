@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Procedure from "./MetaObjects/Procedure";
 
+import { ScrollHelper } from "./Helpers/ScrollHelper";
+
 const ProcedureList = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -9,6 +11,12 @@ const ProcedureList = () => {
     useEffect(() => {
         fetchTasks();
     }, []);
+
+    useEffect(() => {
+        if (!isLoading) {
+            ScrollHelper();
+        }
+    }, [isLoading]);
 
     const fetchTasks = async () => {
         try {
