@@ -67,6 +67,10 @@ hr {
     background-color: #303030;
 }
 
+.whiteSpace {
+    white-space: pre
+}
+
 /* use local google font due gpdr */
 /* latin-ext */
 @font-face {

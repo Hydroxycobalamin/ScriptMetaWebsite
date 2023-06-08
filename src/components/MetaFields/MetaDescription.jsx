@@ -1,6 +1,9 @@
 import React from "react";
 
 export const MetaDescription = ({ description }) => {
+    const checkForWhiteSpace = (text) => {
+        return text.startsWith(" ");
+    }
     return (
         <tr className="table-default">
             <td className="td-doc-key">Description:</td>
@@ -8,8 +11,10 @@ export const MetaDescription = ({ description }) => {
                 {description && description.length > 0 ? (
                     description.map((item, index) => (
                         <React.Fragment key={index}>
+                            <span className={checkForWhiteSpace(item) ? "whiteSpace" : ""}>
                             {item}
                             <br />
+                            </span>
                         </React.Fragment>
                     ))
                 ) : (
