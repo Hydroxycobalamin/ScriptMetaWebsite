@@ -17,7 +17,7 @@ const MetaInformation = ({ data }) => {
         <div className="p-2">
             {filteredData.length > 0 ? (
                 filteredData.map((entry, tableIndex) => (
-                    <table key={tableIndex} className="table table-hover">
+                    <table id={entry.name} key={tableIndex} className="table table-hover">
                         <tbody>
                             <MetaName name={entry.name} />
                             <MetaGroup name={entry.group} />

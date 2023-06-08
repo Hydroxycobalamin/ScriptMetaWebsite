@@ -22,7 +22,7 @@ const MetaEvent = ({ data }) => {
     <div className="p-2">
       {filteredData.length > 0 ? (
         filteredData.map((entry, tableIndex) => (
-          <table key={tableIndex} className="table table-hover">
+          <table id={entry.events[0]} key={tableIndex} className="table table-hover">
             <tbody>
               <MetaName name={entry.events[0]} />
               <MetaEventLines eventLines={entry.events} />
