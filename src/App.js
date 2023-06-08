@@ -27,27 +27,27 @@ const App = () => {
                         <div>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link to="/event" className="nav-link">
+                                    <Link to="/events" className="nav-link">
                                         Events
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/procedure" className="nav-link">
+                                    <Link to="/procedures" className="nav-link">
                                         Procedures
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/task" className="nav-link">
+                                    <Link to="/tasks" className="nav-link">
                                         Tasks
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/script" className="nav-link">
+                                    <Link to="/scripts" className="nav-link">
                                         Script Explanations
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/information" className="nav-link">
+                                    <Link to="/informations" className="nav-link">
                                         Informations
                                     </Link>
                                 </li>
@@ -59,12 +59,11 @@ const App = () => {
                     </nav>
                     <Routes>
                         <Route path="/" element={<AllData />} />
-                        <Route path="/task" element={<TaskList />} />
-                        <Route path="/all" element={<AllData />} />
-                        <Route path="/script" element={<ScriptList />} />
-                        <Route path="/procedure" element={<ProcedureList />} />
-                        <Route path="/information" element={<InformationList />} />
-                        <Route path="/event" element={<EventList />} />
+                        <Route path="/tasks" element={<TaskList />} />
+                        <Route path="/scripts" element={<ScriptList />} />
+                        <Route path="/procedures" element={<ProcedureList />} />
+                        <Route path="/informations" element={<InformationList />} />
+                        <Route path="/events" element={<EventList />} />
                     </Routes>
                     <footer>
                         <center>

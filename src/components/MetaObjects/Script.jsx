@@ -21,7 +21,7 @@ const MetaScript = ({ data }) => {
                 filteredData.map((entry, tableIndex) => (
                     <table id={SanitizeName(entry.name)} key={tableIndex} className="table table-hover">
                         <tbody>
-                            <MetaName name={entry.name} />
+                            <MetaName name={entry.name} type="scripts" />
                             <MetaDescription description={entry.description} />
                             <MetaDownload download={entry.download} />
                             <MetaGroup group={entry.group} />

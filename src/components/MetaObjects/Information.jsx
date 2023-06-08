@@ -20,7 +20,7 @@ const MetaInformation = ({ data }) => {
                 filteredData.map((entry, tableIndex) => (
                     <table id={SanitizeName(entry.name)} key={tableIndex} className="table table-hover">
                         <tbody>
-                            <MetaName name={entry.name} />
+                            <MetaName name={entry.name} type="informations" />
                             <MetaGroup name={entry.group} />
                             <MetaDescription description={entry.description} />
                             <MetaWarning warning={entry.warning} />

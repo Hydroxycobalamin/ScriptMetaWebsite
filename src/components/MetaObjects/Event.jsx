@@ -25,7 +25,7 @@ const MetaEvent = ({ data }) => {
                 filteredData.map((entry, tableIndex) => (
                     <table id={SanitizeName(entry.events[0])} key={tableIndex} className="table table-hover">
                         <tbody>
-                            <MetaName name={entry.events[0]} />
+                            <MetaName name={entry.events[0]} type="events" />
                             <MetaEventLines eventLines={entry.events} />
                             <MetaTrigger trigger={entry.triggers} />
                             <MetaExample example={entry.example} />

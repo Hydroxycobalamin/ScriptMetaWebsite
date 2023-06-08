@@ -22,7 +22,7 @@ const MetaProcedure = ({ data }) => {
                 filteredData.map((entry, tableIndex) => (
                     <table id={SanitizeName(entry.attribute)} key={tableIndex} className="table table-hover">
                         <tbody>
-                            <MetaName name={entry.attribute} />
+                            <MetaName name={entry.attribute} type="procedures" />
                             <MetaReturns returns={entry.returns} />
                             <MetaDescription description={entry.description} />
                             <MetaGroup group={entry.group} />

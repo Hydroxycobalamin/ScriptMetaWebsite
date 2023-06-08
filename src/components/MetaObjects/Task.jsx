@@ -21,7 +21,7 @@ const MetaTask = ({ data }) => {
                 filteredData.map((entry, tableIndex) => (
                     <table id={SanitizeName(entry.name)} key={tableIndex} className="table table-hover">
                         <tbody>
-                            <MetaName name={entry.name} />
+                            <MetaName name={entry.name} type="tasks" />
                             <MetaInput input={entry.input} />
                             <MetaDescription description={entry.description} />
                             <MetaUsage usage={entry.usage} />
