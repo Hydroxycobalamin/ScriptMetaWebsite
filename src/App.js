@@ -21,9 +21,9 @@ const App = () => {
             <Router>
                 <div className="position-relative">
                     <nav className="navbar navbar-expand navbar-dark bg-primary">
-                        <a className="navbar-brand" href="/">
+                        <Link to="/" className="navbar-brand">
                             Icecapades Script Documentation
-                        </a>
+                        </Link>
                         <div>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
@@ -46,13 +46,11 @@ const App = () => {
                                         Script Explanations
                                     </Link>
                                 </li>
-
                                 <li className="nav-item">
                                     <Link to="/information" className="nav-link">
                                         Informations
                                     </Link>
                                 </li>
-
                             </ul>
                         </div>
                         <div className="position-absolute end-0">
