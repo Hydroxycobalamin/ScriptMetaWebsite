@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { SearchContext } from "../../App";
 import { filterDataBySearchQuery } from "../SearchHelper/Search";
+import { SanitizeName } from "../Helpers/SanitizeName";
 
 import MetaName from "../MetaFields/MetaName.jsx";
 import MetaDescription from "../MetaFields/MetaDescription.jsx";
@@ -18,7 +19,7 @@ const MetaScript = ({ data }) => {
         <div className="p-2">
             {filteredData.length > 0 ? (
                 filteredData.map((entry, tableIndex) => (
-                    <table id={entry.name} key={tableIndex} className="table table-hover">
+                    <table id={SanitizeName(entry.name)} key={tableIndex} className="table table-hover">
                         <tbody>
                             <MetaName name={entry.name} />
                             <MetaDescription description={entry.description} />
