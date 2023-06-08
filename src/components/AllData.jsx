@@ -57,10 +57,6 @@ const AllData = () => {
     const filteredInformation = filteredData.filter((object) => object.type === "information");
     const filteredEvent = filteredData.filter((object) => object.type === "event");
 
-    if (filteredScripts.length === 0 && filteredTasks.length === 0) {
-        return <div className="status">No matching data found</div>;
-    }
-
     return (
         <div className="d-flex flex-column">
             <div className="jumbotron">
@@ -72,11 +68,16 @@ const AllData = () => {
                 </center>
             </div>
             <center>
-                <Event data={filteredEvent} />
-                <Script data={filteredScripts} />
-                <Task data={filteredTasks} />
-                <Procedure data={filteredProcedure} />
-                <Information data={filteredInformation} />
+                {filteredEvent.length > 0 && <Event data={filteredEvent} />}
+                {filteredScripts.length > 0 && <Script data={filteredScripts} />}
+                {filteredTasks.length > 0 && <Task data={filteredTasks} />}
+                {filteredProcedure.length > 0 && <Procedure data={filteredProcedure} />}
+                {filteredInformation.length > 0 && <Information data={filteredInformation} />}
+                {filteredEvent.length === 0 &&
+                    filteredScripts.length === 0 &&
+                    filteredTasks.length === 0 &&
+                    filteredProcedure.length === 0 &&
+                    filteredInformation.length === 0 && <div className="p-2">No matching objects found</div>}
             </center>
         </div>
     );
