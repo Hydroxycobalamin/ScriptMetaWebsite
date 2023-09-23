@@ -13,6 +13,9 @@ import MetaExample from "../MetaFields/MetaExample.jsx";
 import MetaSwitch from "../MetaFields/MetaSwitches.jsx";
 import MetaContext from "../MetaFields/MetaContexts.jsx";
 import MetaScript from "../MetaFields/MetaScript.jsx";
+import MetaPlayer from "../MetaFields/MetaPlayer.jsx";
+import MetaLocation from "../MetaFields/MetaLocation.jsx";
+import MetaCancellable from "../MetaFields/MetaCancellable";
 
 const MetaEvent = ({ data }) => {
     const searchQuery = useContext(SearchContext);
@@ -28,9 +31,12 @@ const MetaEvent = ({ data }) => {
                             <MetaName name={entry.events[0]} type="events" />
                             <MetaEventLines eventLines={entry.events} />
                             <MetaTrigger trigger={entry.triggers} />
+                            <MetaPlayer reason={entry.player} />
                             <MetaExample example={entry.example} />
                             <MetaSwitch switches={entry.switch} />
                             <MetaContext context={entry.context} />
+                            <MetaCancellable boolean={entry.cancellable} />
+                            <MetaLocation boolean={entry.location} />
                             <MetaGroup group={entry.group} />
                             <MetaScript script={entry.script} />
                             <MetaWarning warning={entry.warning} />
