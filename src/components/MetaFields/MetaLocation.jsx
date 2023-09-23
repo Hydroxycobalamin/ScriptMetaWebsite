@@ -8,7 +8,7 @@ export const MetaLocation = ({boolean}) => {
 
     return (
         <tr className="table-default">
-            <td className="td-doc-key">Has Location:</td>
+            <td className="td-doc-key">Has Location</td>
             <td>{ToTitleCase(boolean)} - This adds the switches 'in:{`<`}area{`>`}', 'location_flagged:{`<`}flag{`>`}', ...</td>
         </tr>
     );
